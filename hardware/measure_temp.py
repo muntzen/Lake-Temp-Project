@@ -51,7 +51,7 @@ def post_temperature(temp, unit):
 	currentGMT = time.gmtime()
 	tstamp = calendar.timegm(currentGMT)
 
-	url = 'https://water-temperature-project.glitch.me/store-temperature'
+	url = 'https://chatuge-water-temperature.glitch.me/store-temperature'
 	postData = {'temperature':temp, 'unit':'F', 'timestamp': tstamp}
 
 	# try to post the temperature to the server a few times, if it fails, just give up
